@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Muhamad Fardan</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><b>Portfolio - Muhamad Fardan</b></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="img/profile.png" alt="Profile Picture">
+        <h1>Muhamad Fardan</h1>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>Nama lengkap saya adalah Muhamad Fardan, saya biasa dipanggil Adan. <br>Saya adalah siswa dari SMK Bina Mandiri Multimedia Jurusan RPL (Rekayasa Perangkat Lunak). <br>Saya sangat mendalami cara pengembangan perangkat lunak, termasuk pembuatan <br> dan pemeliharaan. Saya juga seorang yang teliti dan disiplin dalam bekerja.</p>
+        <table border="1" style="width: 20%; margin: 0 auto;" >
+            <thead>
+                <tr style="text-align: center; ">
+                    <th colspan="2">Data Pribadi</th>
+                </tr>
+            </thead>
+            <tbody style="text-align: left;">
+                <tr>
+                    <td>Nama</td>
+                    <td>Muhamad Fardan</td>
+                </tr>
+                <tr>
+                    <td>Tempat/ Tanggal Lahir</td>
+                    <td>Bogor, 23-11-2006</td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>Laki-laki</td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>Islam</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Pelajar</td>
+                </tr>
+                <tr>
+                    <td>Kewarganegaraan</td>
+                    <td>Indonesia</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="skills">
+        <h2>Keahlian</h2>
+        <p>HTML, CSS, Dan Javascript</p>
+        <p>PHP MYSQL</p>
+        <p>Visual Basic</p>
+        <p>Kotlin dan Java</p>
+        <p>Microsoft Office</p>
+    </section>
+    <section id="project">
+        <h2>Project</h2>
+        <div class="card">
+            <img src="img/e-commerce.png" alt="Foto 1">
+            <p>Desktop E-Commerce</p>
+        </div>
+        <div class="card">
+            <img src="img/food.png" alt="Foto 2">
+            <p>Website Kuliner</p>
+        </div>
+        <div class="card">
+            <img src="img/flagsgame.png" alt="Foto 3">
+            <p>Game Tebak Nama Negara berbasis Web</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Alamat: Bogor, Jawa Barat</p>
+        <p>Nomor Telepon: +62 812 9892 7681</p>
+        <p>Email: muhamadfardan011@gmail.com</p>
+        <a href="https://www.facebook.com/muhamad.fardann.1">
+            <span class="fab fa-facebook"></span>
+        </a>
+        <a href="https://github.com/fardan23">
+            <span class="fab fa-github"></span>
+        </a>
+        <a href="https://instagram.com/fardan111_?igshid=ZDdkNTZiNTM=">
+            <span class="fab fa-instagram"></span>
+        </a>
+    </section>
+    <footer>
+        <p>&copy; Muhamad Fardan 2023</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('a').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+        </script>
+</body>
+</html>

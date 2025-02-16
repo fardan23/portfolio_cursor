@@ -1,0 +1,92 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 100vh; /* Tinggi maksimum sama dengan tinggi viewport */
+    overflow-y: auto; /* Mengaktifkan scroll vertikal jika konten melebihi tinggi maksimum */
+    z-index: 100;
+    background-color: #ff6347;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Ganti dengan warna yang Anda inginkan */
+}
+
+section {
+    text-align: center;
+}
+
+#home {
+    background-color: lightgreen;
+    margin-top: 50px;
+}
+
+#home img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px darkgreen;
+    width: 30%;
+}
+
+#home h1 {
+    font-size: 20px;
+}
+
+#about {
+    background-color: lightblue;
+}
+
+#about h2 {
+    font-size: 20px;
+}
+
+#about p {
+    text-align: center;
+}
+
+#skills {
+    background-color: #A52A2A;
+    color: white;
+}
+
+#project {
+    background-color: lightyellow;
+}
+
+.card {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card img {
+    width: 30%;
+    height: auto;
+}
+
+#contact {
+    background-color: lightpink;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+}
